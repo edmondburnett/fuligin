@@ -1,6 +1,6 @@
 fuligin
 ===
-An opinionated static wiki engine / generator.
+An idiosyncratic static wiki engine / site generator.
 
 > "Furthermore, the hue fuligin, which is darker than black, admirably erases all folds, bunchings and gatherings so far as the eye is concerned, showing only a featureless dark." -- Gene Wolfe, The Shadow of the Torturer
 
@@ -8,7 +8,7 @@ An opinionated static wiki engine / generator.
 Design philosophy
 ---
 
-- Pure C++ w/standard library only, commonly available on most devices, zero other dependencies.
+- Pure C++ w/standard library only, commonly available on most general computing devices, zero other dependencies.
 - Highly portable, can be compiled virtually anywhere with minimal fuss.
 - Can be built and viewed from low-power and potentially primitive devices.
 - Templates and generated files utilize pure open web standards.
