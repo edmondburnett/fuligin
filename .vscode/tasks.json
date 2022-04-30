@@ -6,12 +6,12 @@
       "label": "C/C++: clang++ build active file",
       "command": "/usr/bin/clang++",
       "args": [
-        "-std=c++11",
+        "-std=c++20",
         "-fdiagnostics-color=always",
         "-g",
-        "${file}",
+        "${workspaceFolder}/src/main.cpp",
         "-o",
-        "${fileDirname}/${fileBasenameNoExtension}"
+        "${workspaceFolder}/fuligin"
       ],
       "options": {
         "cwd": "${fileDirname}"
