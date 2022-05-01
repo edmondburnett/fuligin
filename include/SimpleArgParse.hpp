@@ -8,8 +8,15 @@
 class SimpleArgParse
 {
 public:
-    static void show_usage(std::string exec_name);
-    static void parse(int argc, char *argv[]);
+    SimpleArgParse(std::string version);
+    ~SimpleArgParse(){};
+
+    // vars
+    std::string version;
+
+    // methods
+    void show_usage(std::string exec_name, std::string version);
+    void parse(int argc, char *argv[]);
 };
 
 #endif

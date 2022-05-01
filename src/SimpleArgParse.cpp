@@ -1,7 +1,15 @@
+#include <stdlib.h>
+
 #include <SimpleArgParse.hpp>
 
-void SimpleArgParse::show_usage(std::string exec_name)
+SimpleArgParse::SimpleArgParse(std::string ver)
 {
+    version = ver;
+}
+
+void SimpleArgParse::show_usage(std::string exec_name, std::string version)
+{
+    std::cerr << "fuligin " << version << std::endl;
     std::cerr << "Usage: " << exec_name << " <option(s)> <source path>"
               << "\n\nOptions:\n"
               << "\t-h,--help\t\t\tShow this help message\n"
@@ -11,11 +19,12 @@ void SimpleArgParse::show_usage(std::string exec_name)
 
 void SimpleArgParse::parse(int argc, char *argv[])
 {
-    if (argc < 3)
-    {
-        show_usage(argv[0]);
-        // return 1;
-    }
+    // std::cout << "got " << argc << " arguments." << std::endl;
+    // if (argc < 2)
+    // {
+    //     show_usage(argv[0], SimpleArgParse::version);
+    //     exit(1);
+    // }
 
     std::vector<std::string> sources;
     std::string destination;
@@ -25,8 +34,8 @@ void SimpleArgParse::parse(int argc, char *argv[])
         std::string arg = argv[i];
         if ((arg == "-h") || (arg == "--help"))
         {
-            show_usage(argv[0]);
-            // return 0;
+            show_usage(argv[0], SimpleArgParse::version);
+            exit(0);
         }
         else if ((arg == "-d") || (arg == "--destination"))
         {
@@ -37,7 +46,7 @@ void SimpleArgParse::parse(int argc, char *argv[])
             else
             { // Uh-oh, there was no argument to the destination option.
                 std::cerr << "--destination option requires one argument." << std::endl;
-                // return 1;
+                exit(1);
             }
         }
         else
