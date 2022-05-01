@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include <structop.hpp>
+#include <initialization.hpp>
 
 struct Options
 {
@@ -28,7 +29,7 @@ int main(int argc, char **argv)
         }
         else if (options.command == Options::Commands::init)
         {
-            std::cout << "initializing..." << std::endl;
+            initialize();
         }
     }
     catch (structopt::exception &e)
