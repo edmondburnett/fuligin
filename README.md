@@ -1,3 +1,5 @@
+![fuliginous](fuliginous.png)
+
 fuligin
 ===
 An idiosyncratic static wiki engine / site generator (WIP).
@@ -15,3 +17,4 @@ Design philosophy
 - Templates and generated files utilize pure open web standards.
 - Simple, enjoyable, and calming to maintain; should be able to walk away for an extended period of time and come back to an immediate, fully-working project without a broken environment or dependencies etc (i.e., npm).
 - Generated sites can be run and worked on fully-offline with no offsite queries.
+ 
