@@ -4,7 +4,7 @@ fuligin
 ===
 An idiosyncratic static wiki engine / site generator (WIP).
 
-> "Furthermore, the hue fuligin, which is darker than black, admirably erases all folds, bunchings and gatherings so far as the eye is concerned, showing only a featureless dark." -- Gene Wolfe, The Shadow of the Torturer
+> "Furthermore, the hue fuligin, which is darker than black, admirably erases all folds, bunchings and gatherings so far as the eye is concerned, showing only a featureless dark." -- Gene Wolfe, The Book of The New Sun
 
 
 Design philosophy
