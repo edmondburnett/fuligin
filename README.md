@@ -12,6 +12,6 @@ Design philosophy
 
 - Single binary static generator.
 - Pure C++, commonly available on most general computing devices, no outside dependencies.
-- Can be built, hosted, and viewed from low-power, air-gapped devices.
+- Can be built, hosted, and viewed from low-power, lower-bandwidth, air-gapped devices.
 - Templating may be esoteric, but all generated output utilizes pure open web standards, with no JavaScript.
 - Simple, enjoyable, and calming to maintain; should be able to walk away for an extended period of time and come back to an immediate, fully-working project without a broken environment or dependencies etc (i.e., npm).
