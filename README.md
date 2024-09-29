@@ -13,7 +13,9 @@ An idiosyncratic static wiki engine / site generator (WIP).
 - Static site generator.
 - Language details TBD. Likely Rust, Python, or C++. No or minimal dependencies.
 - Data details TBD. Potentially assembled from emacs org-mode files, markdown, HTML fragments, or some custom
-  format.
+  format. The data is preferably decoupled from the engine/generator so that others may readily adopt the
+  software with their own content, and its license can be free (libre) while any content is licensed according
+  to personal preference.
 - Can be hosted and viewed from low-power, lower-bandwidth, air-gapped devices.
 - Templating may be esoteric, but all generated output utilizes pure open web standards. No JavaScript, or
   only marginal scripts that do not break functionality on browsers with JS disabled.
